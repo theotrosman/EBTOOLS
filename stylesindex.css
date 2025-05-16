@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bodyindex {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* HEADER ESTILO FLEX CON 3 COLUMNAS */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* NAVBAR A LA IZQUIERDA */
+.nav-left {
+    flex: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: white;
+}
+
+/* LOGO CENTRADO */
+.logo-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-center img {
+    width: 30%;
+    height: auto;
+}
+
+/* ESPACIADOR A LA DERECHA PARA SIMETRÍA */
+.spacer-right {
+    flex: 1.1;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
