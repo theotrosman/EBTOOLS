@@ -54,14 +54,22 @@ header {
 
 .navbar li a {
     text-decoration: none;
-    color: black;
+    color: #fffdfd;
     font-weight: bold;
     font-size: 1.3rem;
     transition: color 0.3s ease;
+    text-shadow: 2px 0px 0px black,
+        0px 2px 0px black,
+        -2px 0px 0px black,
+        0px -2px 0px black;
 }
 
 .navbar li a:hover {
-    color: white;
+    color: rgb(252, 199, 86);
+    text-shadow: 2px 0px 0px rgb(0, 0, 0),
+        0px 2px 0px black,
+        -2px 0px 0px rgb(0, 0, 0),
+        0px -2px 0px black;
 }
 
 /* LOGO CENTRADO */
@@ -78,8 +86,9 @@ header {
 
 /* ESPACIADOR A LA DERECHA PARA SIMETRÍA */
 .spacer-right {
-    flex: 1.1;
+    flex: 1.15;
 }
+
 
 /* FOOTER */
 footer {

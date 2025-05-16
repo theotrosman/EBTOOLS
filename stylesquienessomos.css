@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bodyqs {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 1;
+    background-color: #f3b165;
+    border-bottom: 1.3px solid black;
+}
+
+/* NAVBAR A LA IZQUIERDA */
+.nav-left {
+    flex: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fffdfd;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+    text-shadow: 2px 0px 0px black,
+        0px 2px 0px black,
+        -2px 0px 0px black,
+        0px -2px 0px black;
+}
+
+.navbar li a:hover {
+    color: rgb(252, 186, 86);
+    text-shadow: 2px 0px 0px rgb(0, 0, 0),
+        0px 2px 0px black,
+        -2px 0px 0px rgb(0, 0, 0),
+        0px -2px 0px black;
+}
+
+/* LOGO CENTRADO */
+.logo-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-center img {
+    width: 30%;
+    height: auto;
+}
+
+/* ESPACIADOR A LA DERECHA PARA SIMETRÍA */
+.spacer-right {
+    flex: 1.15;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
