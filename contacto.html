@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Contacto ➤ EBTOOLS</title>
+    <link rel="icon" type="image/png" href="ebtools-logo.png">
     <link rel="stylesheet" href="stylescontacto.css">
 </head>
 <body class="bodycontacto">
@@ -12,7 +13,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="quienessomos.html">Quiénes somos</a></li>
+                <li><a href="quienessomos.html">Ubicación</a></li>
                 <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -27,7 +28,107 @@
 
 
     <main>
-
+        <video autoplay muted loop id="myVideo">
+        <source src="20250516_1435_Vineyard Serenity_simple_compose_01jvd2marnfrqrvks68462bkx6.mp4" type="video/mp4">
+    </video>
+<img src="tarjetapresentaciondirector.png" alt="" srcset="" class="tarjetapresentacion">
     </main>
+    <footer>
+    <h1>Nos especializamos en la importación y distribución de equipos y herramientas para la optimización de
+            procesos. Nuestro objetivo es brindar productos que permitan acelerar las tareas y reducir los costos de
+            mano de obra, especializandonos en el sector de construcción y agrícola.</h1>
+<div class="nav-left">
+            <nav class="navbarfooter">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="quienessomos.html">Ubicación</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+<div class="redes-container">
+    <a href="https://instagram.com/ebtools" target="_blank">
+        <img src="instagramlogo.png" alt="Ir a Instagram" class="instagramlogo">
+    </a>
+    <a href="https://wa.me/5491171349389?text=Hola%21" target="_blank">
+        <img src="whatsapplogo.png" alt="Enviar WhatsApp" class="whatsapplogo">
+    </a>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ml.elbahiense@gmail.com">
+        <img src="maillogo.png" alt="Enviar mail" class="maillogo">
+    </a>
+</div>
+        <pre>© 2025 EBTOOLS</pre>
+    </footer>
+    <script>
+    let originalTitle = document.title;
+    let timer;
+
+    function cambiarTituloInactivo() {
+        document.title = "¡Volvé a EBTOOLS! ";
+    }
+
+    function restaurarTitulo() {
+        document.title = originalTitle;
+    }
+
+    // Detecta si el usuario cambia de pestaña
+    document.addEventListener("visibilitychange", () => {
+        if (document.hidden) {
+            timer = setTimeout(cambiarTituloInactivo, 3000); // espera 3 segundos
+        } else {
+            clearTimeout(timer);
+            restaurarTitulo();
+        }
+    });
+
+    // Detecta si no hay interacción del usuario
+    let inactividad;
+    function reiniciarTimerInactividad() {
+        clearTimeout(inactividad);
+        inactividad = setTimeout(cambiarTituloInactivo, 10000); // 10 segundos sin moverse
+        restaurarTitulo();
+    }
+
+    ["mousemove", "keydown", "scroll", "click"].forEach(evt => {
+        document.addEventListener(evt, reiniciarTimerInactividad);
+    });
+</script>
+
 </body>
+<!-- 
+.==============================================.
+|                                              |
+|                           .'\                |
+|                          //  ;               |
+|                         /'   |               |
+|        .----..._    _../ |   \               |
+|         \'---._ `.-'      `  .'              |
+|          `.    '              `.             |
+|            :            _,.    '.            |
+|            |     ,_    (() '    |            |
+|            ;   .'(().  '      _/__..-        |
+|            \ _ '       __  _.-'--._          |
+|            ,'.'...____'::-'  \     `'        |
+|           / |   /         .---.              |
+|     .-.  '  '  / ,---.   (     )             |
+|    / /       ,' (     )---`-`-`-.._          |
+|   : '       /  '-`-`-`..........--'\         |
+|   ' :      /  /                     '.       |
+|   :  \    |  .'         o             \      |
+|    \  '  .' /          o       .       '     |
+|     \  `.|  :      ,    : _o--'.\      |     |
+|      `. /  '       ))    (   )  \>     |     |
+|        ;   |      ((      \ /    \___  |     |
+|        ;   |      _))      `'.-'. ,-'` '     |
+|        |    `.   ((`            |/    /      |
+|        \     ).  .))            '    .       |
+|     ----`-'-'  `''.::.________:::TT'' ---    |
+|                                              |
+|                                              |
+|==============================================|
+|                  THEO TROSMAN                |
+|         https://github.com/theotrosman       |
+'=============================================='
+-->
 </html>
