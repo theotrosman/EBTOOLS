@@ -45,10 +45,9 @@ El footer incluye accesos rápidos:
 
 ## 🛠️ Próximos pasos
 
-- Optimizar para dispositivos móviles
-- Agregar animaciones suaves con JavaScript
 - Migrar a un stack más dinámico (como React o Vue)
 - Agregar sección de compras o pedidos online
+- Sincronizar precios con una Chart de Docs
 
 ---
 
