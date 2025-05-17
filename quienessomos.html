@@ -159,6 +159,32 @@
     <a href="https://wa.me/5491171349389?text=¡Hola!%20Quiero%20más%20info." class="whatsapp-float" target="_blank">
         <img src="whatsapplogo.png" alt="WhatsApp">
     </a>
+    <!-- POPUP CÓMO LLEGAR -->
+<div id="popup-maps" class="popup-guia">
+  <div class="popup-contenido">
+    <p>📍 ¿Querés abrir nuestra ubicación en Google Maps?</p>
+    <a href="https://www.google.com/maps/place/EBTOOLS/@-34.636099,-58.445743" target="_blank">
+      <button>Abrir en Maps</button>
+    </a>
+    <button onclick="cerrarPopup('popup-maps')">Cerrar</button>
+  </div>
+</div>
+
+<script>
+  // Mostrar pop-up de ubicación solo en celulares
+  window.addEventListener("load", () => {
+    if (window.innerWidth < 768) {
+      setTimeout(() => {
+        document.getElementById("popup-maps").style.display = "flex";
+      }, 1500);
+    }
+  });
+
+  function cerrarPopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
 </body>
 <!-- 
 .==============================================.
