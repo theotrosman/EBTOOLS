@@ -10,9 +10,24 @@
 </head>
 
 <body class="bodyindex">
-    <video autoplay muted loop id="myVideo">
-        <source src="20250516_2031_Sunset Vineyard Work_simple_compose_01jvdpzydhe3k99dt429awcba1.mp4" type="video/mp4">
-    </video>
+        <video autoplay muted loop id="myVideo">
+    <source id="videoSource" type="video/mp4">
+</video>
+
+<script>
+    const videos = [
+        "video1.mp4",
+        "video2.mp4",
+        "video3.mp4",
+        "video4.mp4"
+    ];
+
+    const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+
+    const videoSource = document.getElementById("videoSource");
+    videoSource.src = randomVideo;
+   document.getElementById("myVideo").load();
+</script>
     <header>
         <div class="nav-left">
             <nav class="navbar">

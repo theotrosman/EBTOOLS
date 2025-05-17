@@ -65,9 +65,12 @@ header {
 }
 
 .logo-center img {
-    width: 30%;
+    width: 10rem;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
+
 
 /* ESPACIADOR A LA DERECHA PARA SIMETRÍA */
 .spacer-right {
