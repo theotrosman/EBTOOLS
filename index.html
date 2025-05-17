@@ -105,6 +105,19 @@
 <a href="https://wa.me/5491171349389?text=¡Hola!%20Quiero%20más%20info." class="whatsapp-float" target="_blank">
   <img src="whatsapplogo.png" alt="WhatsApp">
 </a>
+<div id="popup-guia" class="popup-guia">
+  <div class="popup-contenido">
+    <p>👋 ¡Bienvenido a EBTOOLS!</p>
+    <p>Acá podés ver nuestros <strong>productos</strong>, consultar por <strong>WhatsApp</strong> o ver nuestra <strong>ubicación</strong>.</p>
+    <button id="cerrar-popup">Entendido</button>
+  </div>
+</div>
+<script>
+  document.getElementById("cerrar-popup").addEventListener("click", function () {
+    document.getElementById("popup-guia").style.display = "none";
+  });
+</script>
+
 </body>
 <!-- 
 .==============================================.
