@@ -1,4 +1,4 @@
-# 🌾 EBTOOLS — Página Web Oficial -> [Link a la página](https://tiny-lollipop-ecdf85.netlify.app/)
+# 🌾 EBTOOLS — Página Web Oficial — [Link a la página](https://tiny-lollipop-ecdf85.netlify.app/)
 
 Este proyecto es una **plataforma web desarrollada en HTML y CSS puro**, pensada como sitio oficial para el negocio de herramientas de mi papá, **EBTOOLS**, especializado en equipamiento para trabajos de agricultura y campo.
 
