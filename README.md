@@ -62,7 +62,8 @@ El footer incluye accesos rápidos a medios de contacto:
 Desarrollado por **Theo Trosman**  
 Estudiante de informática – Escuela ORT Almagro
 
-<img src="https://github.com/user-attachments/assets/ea9ce80f-9b64-4d92-81c7-dc6131a5f9e3" style="border: 2px solid black;" alt="Captura EBTOOLS" />
-
+<img src="https://github.com/user-attachments/assets/ea9ce80f-9b64-4d92-81c7-dc6131a5f9e3" 
+     style="border: 4px solid black; border-radius: 40px;" 
+     alt="Captura EBTOOLS" />
 
 
