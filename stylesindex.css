@@ -114,7 +114,7 @@ header {
   opacity: 0;
   transform: scale(0);
   transition: all 0.5s ease;
-  animation: sparkle 1s infinite;
+  animation: sparkle 2.5s infinite;
   pointer-events: none;
 }
 
@@ -196,7 +196,8 @@ header {
 .navbar li a,
 .navbarfooter li a,
 button {
-  transition: all 0.3s ease;
+    transition: color 0.6s ease, text-shadow 0.6s ease;
+
 }
 .logo-center img:hover {
   transform: scale(1.05) rotate(1deg);
