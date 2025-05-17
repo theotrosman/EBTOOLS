@@ -14,7 +14,7 @@ La página permite a los usuarios navegar por distintas secciones clave:
 
 - **HTML5 + CSS3** puro
 - Layout construido con **Flexbox**
-- Responsive para escritorio (versión mobile en desarrollo)
+- Responsive para escritorio y cuenta con su respectiva versión mobile
 - Tipografía importada de Google Fonts: *Poppins*
 - Integración de **video como fondo** en la landing
 - Componentes reutilizables como el **header y footer**
