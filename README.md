@@ -1,4 +1,4 @@
-# 🌾 EBTOOLS — Página Web Oficial
+# 🌾 EBTOOLS — Página Web Oficial -> [Link a la página](https://tiny-lollipop-ecdf85.netlify.app/)
 
 Este proyecto es una **plataforma web desarrollada en HTML y CSS puro**, pensada como sitio oficial para el negocio de herramientas de mi papá, **EBTOOLS**, especializado en equipamiento para trabajos de agricultura y campo.
 
@@ -46,14 +46,6 @@ El footer incluye accesos rápidos a medios de contacto:
 - 📱 WhatsApp: [+54 9 11 7134 9389](https://wa.me/5491171349389?text=Hola%21)  
 - 📸 Instagram: [@ebtools](https://instagram.com/ebtools)  
 - 🛒 Tienda oficial: [ebtools.mercadoshops.com.ar](https://ebtools.mercadoshops.com.ar)
-
----
-
-## 🌐 Accedé a la página
-
-<a href="https://tiny-lollipop-ecdf85.netlify.app/" target="_blank">
-  <img src="https://img.shields.io/badge/IR%20A%20EBTOOLS-%2325D366?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Ir al sitio de EBTOOLS" />
-</a>
 
 ---
 
