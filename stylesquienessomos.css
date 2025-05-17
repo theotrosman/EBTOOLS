@@ -403,3 +403,13 @@ h1, h2, h3, a {
 .popup-contenido button[onclick] {
   background-color: #e74c3c; 
 }
+.scroll-animado {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-animado.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

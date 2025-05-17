@@ -105,6 +105,10 @@
 <a href="https://wa.me/5491171349389?text=¡Hola!%20Quiero%20más%20info." class="whatsapp-float" target="_blank">
   <img src="whatsapplogo.png" alt="WhatsApp">
 </a>
+<a href="tel:+5491154143660" class="telefono-float" title="Llamanos" aria-label="Llamanos">
+  📞
+</a>
+
 <div id="popup-guia" class="popup-guia">
   <div class="popup-contenido">
     <p>👋 ¡Bienvenido a EBTOOLS!</p>
@@ -116,6 +120,19 @@
   document.getElementById("cerrar-popup").addEventListener("click", function () {
     document.getElementById("popup-guia").style.display = "none";
   });
+</script>
+<script>
+  const elementos = document.querySelectorAll('.scroll-animado');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  elementos.forEach(el => observer.observe(el));
 </script>
 
 </body>

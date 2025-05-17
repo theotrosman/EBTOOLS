@@ -156,6 +156,19 @@
 <a href="https://wa.me/5491171349389?text=¡Hola!%20Quiero%20más%20info." class="whatsapp-float" target="_blank">
   <img src="whatsapplogo.png" alt="WhatsApp">
 </a>
+<script>
+  const elementos = document.querySelectorAll('.scroll-animado');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  elementos.forEach(el => observer.observe(el));
+</script>
 
 </body>
 <!-- 

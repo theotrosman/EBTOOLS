@@ -185,6 +185,19 @@
             document.getElementById(id).style.display = "none";
         }
     </script>
+<script>
+  const elementos = document.querySelectorAll('.scroll-animado');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  elementos.forEach(el => observer.observe(el));
+</script>
 
 </body>
 <!-- 

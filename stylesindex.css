@@ -288,3 +288,46 @@ h1, h2, h3, a {
     display: none; 
   }
 }
+.scroll-animado {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-animado.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.telefono-float {
+  position: fixed;
+  bottom: 90px; /* justo encima del botón de WhatsApp */
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: white;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.telefono-float:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+  .telefono-float {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 75px;
+    right: 15px;
+  }
+}
