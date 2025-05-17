@@ -52,7 +52,7 @@ El footer incluye accesos rápidos a medios de contacto:
 ## 🌐 Accedé a la página
 
 <a href="https://tiny-lollipop-ecdf85.netlify.app/" target="_blank">
-  <img src="https://img.shields.io/badge/IR%20A%20EBTOOLS-%2325D366?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ir al sitio de EBTOOLS" />
+  <img src="https://img.shields.io/badge/IR%20A%20EBTOOLS-%2325D366?style=for-the-badge&logo=googlechrome&logoColor=black" alt="Ir al sitio de EBTOOLS" />
 </a>
 
 ---
