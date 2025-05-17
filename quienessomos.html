@@ -15,17 +15,17 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="quienessomos.html">Ubicación</a></li>
                     <li><a href="productos.html">Productos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="quienessomos.html">Ubicación</a></li>
                 </ul>
             </nav>
         </div>
         <a href="https://ebtools.mercadoshops.com.ar" class="logo-link">
-                <img src="ebtools-logo-bordenegro.png" alt="Logo EBTOOLS" class="logo-animado">
-                <span class="stars">⭐</span>
-                <span class="stars stars2">⭐</span>
-            </a>
+            <img src="ebtools-logo-bordenegro.png" alt="Logo EBTOOLS" class="logo-animado">
+            <span class="stars">⭐</span>
+            <span class="stars stars2">⭐</span>
+        </a>
         <div class="spacer-right"></div>
     </header>
 
@@ -33,7 +33,7 @@
 
     <main>
         <section><iframe
-                src="https://www.google.com/maps/embed?pb=!4v1747432911604!6m8!1m7!1se86pO9O1NNI6SAFHzhHaHg!2m2!1d-34.59976417165978!2d-58.47309403317622!3f202.48357885736306!4f-0.3673358965419027!5f0.7820865974627469"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13136.682018349084!2d-58.49157093091861!3d-34.59984974787543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb60341986355%3A0x46abe09367bf4705!2sEspinosa%202882%2C%20C1416%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sus!4v1747507305599!5m2!1ses!2sus"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe></section>
     </main>
@@ -41,7 +41,7 @@
         <h1>Nos especializamos en la importación y distribución de equipos y herramientas para la optimización de
             procesos. Nuestro objetivo es brindar productos que permitan acelerar las tareas y reducir los costos de
             mano de obra, especializandonos en el sector de construcción y agrícola.</h1>
-<div class="nav-left">
+        <div class="nav-left">
             <nav class="navbarfooter">
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
@@ -51,59 +51,26 @@
                 </ul>
             </nav>
         </div>
-<div class="redes-container">
-  <a href="https://instagram.com/ebtools" target="_blank" class="red-icon">
-    <img src="instagramlogo.png" alt="Instagram" class="instagramlogo">
-    <span class="emojis ig-emoji"></span>
-  </a>
-  <a href="https://wa.me/5491171349389?text=Hola%21" target="_blank" class="red-icon">
-    <img src="whatsapplogo.png" alt="WhatsApp" class="whatsapplogo">
-    <span class="emojis wa-emoji"></span>
-  </a>
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ml.elbahiense@gmail.com" target="_blank" class="red-icon">
-    <img src="maillogo.png" alt="Mail" class="maillogo">
-    <span class="emojis mail-emoji"></span>
-  </a>
-</div>
-</div>
+        <div class="redes-container">
+            <a href="https://instagram.com/ebtools" target="_blank" class="red-icon">
+                <img src="instagramlogo.png" alt="Instagram" class="instagramlogo">
+                <span class="emojis ig-emoji"></span>
+            </a>
+            <a href="https://wa.me/5491171349389?text=Hola%21" target="_blank" class="red-icon">
+                <img src="whatsapplogo.png" alt="WhatsApp" class="whatsapplogo">
+                <span class="emojis wa-emoji"></span>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ml.elbahiense@gmail.com" target="_blank"
+                class="red-icon">
+                <img src="maillogo.png" alt="Mail" class="maillogo">
+                <span class="emojis mail-emoji"></span>
+            </a>
+        </div>
+        </div>
 
         <pre>© 2025 EBTOOLS</pre>
     </footer>
     <script>
-    let originalTitle = document.title;
-    let timer;
-
-    function cambiarTituloInactivo() {
-        document.title = "¡Volvé a EBTOOLS! ";
-    }
-
-    function restaurarTitulo() {
-        document.title = originalTitle;
-    }
-
-    // Detecta si el usuario cambia de pestaña
-    document.addEventListener("visibilitychange", () => {
-        if (document.hidden) {
-            timer = setTimeout(cambiarTituloInactivo, 3000); // espera 3 segundos
-        } else {
-            clearTimeout(timer);
-            restaurarTitulo();
-        }
-    });
-
-    // Detecta si no hay interacción del usuario
-    let inactividad;
-    function reiniciarTimerInactividad() {
-        clearTimeout(inactividad);
-        inactividad = setTimeout(cambiarTituloInactivo, 10000); // 10 segundos sin moverse
-        restaurarTitulo();
-    }
-
-    ["mousemove", "keydown", "scroll", "click"].forEach(evt => {
-        document.addEventListener(evt, reiniciarTimerInactividad);
-    });
-</script>
-<script>
         let originalTitle = document.title;
         let timer;
 
@@ -138,24 +105,60 @@
         });
     </script>
     <script>
-  const emojis = ["✨", "🎉", "💥", "🔧", "⭐", "🛠️"];
-  const stars = document.querySelectorAll(".stars");
+        let originalTitle = document.title;
+        let timer;
 
-  stars.forEach(star => {
-    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-    star.textContent = randomEmoji;
-  });
-</script>
-<script>
-  const waEmojis = ["💬", "🟢", "📲", "✉️"];
-  const igEmojis = ["📷", "🎞️", "🤳"];
-  const mailEmojis = ["✉️", "📩", "📧"];
+        function cambiarTituloInactivo() {
+            document.title = "¡Volvé a EBTOOLS! ";
+        }
 
-  document.querySelector(".wa-emoji").textContent = waEmojis[Math.floor(Math.random() * waEmojis.length)];
-  document.querySelector(".ig-emoji").textContent = igEmojis[Math.floor(Math.random() * igEmojis.length)];
-  document.querySelector(".mail-emoji").textContent = mailEmojis[Math.floor(Math.random() * mailEmojis.length)];
-</script>
+        function restaurarTitulo() {
+            document.title = originalTitle;
+        }
 
+        // Detecta si el usuario cambia de pestaña
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
+                timer = setTimeout(cambiarTituloInactivo, 3000); // espera 3 segundos
+            } else {
+                clearTimeout(timer);
+                restaurarTitulo();
+            }
+        });
+
+        // Detecta si no hay interacción del usuario
+        let inactividad;
+        function reiniciarTimerInactividad() {
+            clearTimeout(inactividad);
+            inactividad = setTimeout(cambiarTituloInactivo, 10000); // 10 segundos sin moverse
+            restaurarTitulo();
+        }
+
+        ["mousemove", "keydown", "scroll", "click"].forEach(evt => {
+            document.addEventListener(evt, reiniciarTimerInactividad);
+        });
+    </script>
+    <script>
+        const emojis = ["✨", "🎉", "💥", "🔧", "⭐", "🛠️"];
+        const stars = document.querySelectorAll(".stars");
+
+        stars.forEach(star => {
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+            star.textContent = randomEmoji;
+        });
+    </script>
+    <script>
+        const waEmojis = ["💬", "🟢", "📲", "✉️"];
+        const igEmojis = ["📷", "🎞️", "🤳"];
+        const mailEmojis = ["✉️", "📩", "📧"];
+
+        document.querySelector(".wa-emoji").textContent = waEmojis[Math.floor(Math.random() * waEmojis.length)];
+        document.querySelector(".ig-emoji").textContent = igEmojis[Math.floor(Math.random() * igEmojis.length)];
+        document.querySelector(".mail-emoji").textContent = mailEmojis[Math.floor(Math.random() * mailEmojis.length)];
+    </script>
+    <a href="https://wa.me/5491171349389?text=¡Hola!%20Quiero%20más%20info." class="whatsapp-float" target="_blank">
+        <img src="whatsapplogo.png" alt="WhatsApp">
+    </a>
 </body>
 <!-- 
 .==============================================.
@@ -192,4 +195,5 @@
 |         https://github.com/theotrosman       |
 '=============================================='
 -->
+
 </html>
