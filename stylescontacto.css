@@ -397,3 +397,74 @@ button, .btn {
   opacity: 1;
   transform: translateY(0);
 }
+.telefono-float {
+  position: fixed;
+  bottom: 90px; /* justo encima del botón de WhatsApp */
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: white;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.telefono-float:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+@media (max-width: 768px) {
+  .telefono-float {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    bottom: 75px;
+    right: 15px;
+  }
+}
+.telefono-float {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .telefono-float {
+    display: flex;
+  }
+}
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.6s ease;
+}
+
+#loader img {
+  width: 140px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}

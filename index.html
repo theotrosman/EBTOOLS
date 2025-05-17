@@ -10,6 +10,9 @@
 </head>
 
 <body class="bodyindex">
+  <div id="loader">
+  <img src="ebtools-logo-bordenegro.png" alt="Cargando EBTOOLS..." />
+</div>
     <video autoplay muted loop id="myVideo" autoplay muted loop playsinline>
         <source id="videoSource" type="video/mp4">
     </video>
@@ -133,6 +136,13 @@
   });
 
   elementos.forEach(el => observer.observe(el));
+</script>
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    loader.style.opacity = 0;
+    setTimeout(() => loader.style.display = "none", 600); // coincide con el fade-out
+  });
 </script>
 
 </body>

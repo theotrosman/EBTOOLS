@@ -10,6 +10,9 @@
 </head>
 
 <body class="bodyproducto">
+  <div id="loader">
+  <img src="ebtools-logo-bordenegro.png" alt="Cargando EBTOOLS..." />
+</div>
   <header>
     <div class="nav-left">
       <nav class="navbar">
@@ -4775,6 +4778,9 @@ melidata("send", "view", {
 <a href="https://wa.me/5491171349389?text=¡Hola!%20Quiero%20más%20info." class="whatsapp-float" target="_blank">
   <img src="whatsapplogo.png" alt="WhatsApp">
 </a>
+<a href="tel:+5491154143660" class="telefono-float" title="Llamanos" aria-label="Llamanos">
+  📞
+</a>
 <script>
   const elementos = document.querySelectorAll('.scroll-animado');
 
@@ -4787,6 +4793,13 @@ melidata("send", "view", {
   });
 
   elementos.forEach(el => observer.observe(el));
+</script>
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    loader.style.opacity = 0;
+    setTimeout(() => loader.style.display = "none", 600); // coincide con el fade-out
+  });
 </script>
 
 </body>
