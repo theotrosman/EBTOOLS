@@ -1073,15 +1073,18 @@ melidata("send", "view", {
             </nav>
         </div>
 <div class="redes-container">
-    <a href="https://instagram.com/ebtools" target="_blank">
-        <img src="instagramlogo.png" alt="Ir a Instagram" class="instagramlogo">
-    </a>
-    <a href="https://wa.me/5491171349389?text=Hola%21" target="_blank">
-        <img src="whatsapplogo.png" alt="Enviar WhatsApp" class="whatsapplogo">
-    </a>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ml.elbahiense@gmail.com">
-        <img src="maillogo.png" alt="Enviar mail" class="maillogo">
-    </a>
+  <a href="https://instagram.com/ebtools" target="_blank" class="red-icon">
+    <img src="instagramlogo.png" alt="Instagram" class="instagramlogo">
+    <span class="emojis ig-emoji"></span>
+  </a>
+  <a href="https://wa.me/5491171349389?text=Hola%21" target="_blank" class="red-icon">
+    <img src="whatsapplogo.png" alt="WhatsApp" class="whatsapplogo">
+    <span class="emojis wa-emoji"></span>
+  </a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ml.elbahiense@gmail.com" target="_blank" class="red-icon">
+    <img src="maillogo.png" alt="Mail" class="maillogo">
+    <span class="emojis mail-emoji"></span>
+  </a>
 </div>
         <pre>© 2025 EBTOOLS</pre>
     </footer>
@@ -1162,5 +1165,15 @@ melidata("send", "view", {
     star.textContent = randomEmoji;
   });
 </script>
+<script>
+  const waEmojis = ["💬", "🟢", "📲", "✉️"];
+  const igEmojis = ["📷", "🎞️", "🤳"];
+  const mailEmojis = ["✉️", "📩", "📧"];
+
+  document.querySelector(".wa-emoji").textContent = waEmojis[Math.floor(Math.random() * waEmojis.length)];
+  document.querySelector(".ig-emoji").textContent = igEmojis[Math.floor(Math.random() * igEmojis.length)];
+  document.querySelector(".mail-emoji").textContent = mailEmojis[Math.floor(Math.random() * mailEmojis.length)];
+</script>
+
 </body>
 </html>
