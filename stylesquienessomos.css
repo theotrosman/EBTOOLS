@@ -390,9 +390,16 @@ h1, h2, h3, a {
   margin: 10px 5px 0;
   padding: 10px 20px;
   border: none;
-  background-color: #25D366;
   color: white;
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.popup-contenido a button {
+  background-color: #25D366;
+}
+
+.popup-contenido button[onclick] {
+  background-color: #e74c3c; 
 }
