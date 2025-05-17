@@ -10,24 +10,24 @@
 </head>
 
 <body class="bodyindex">
-        <video autoplay muted loop id="myVideo">
-    <source id="videoSource" type="video/mp4">
-</video>
+    <video autoplay muted loop id="myVideo">
+        <source id="videoSource" type="video/mp4">
+    </video>
 
-<script>
-    const videos = [
-        "video1.mp4",
-        "video2.mp4",
-        "video3.mp4",
-        "video4.mp4"
-    ];
+    <script>
+        const videos = [
+            "video1.mp4",
+            "video2.mp4",
+            "video3.mp4",
+            "video4.mp4"
+        ];
 
-    const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+        const randomVideo = videos[Math.floor(Math.random() * videos.length)];
 
-    const videoSource = document.getElementById("videoSource");
-    videoSource.src = randomVideo;
-   document.getElementById("myVideo").load();
-</script>
+        const videoSource = document.getElementById("videoSource");
+        videoSource.src = randomVideo;
+        document.getElementById("myVideo").load();
+    </script>
     <header>
         <div class="nav-left">
             <nav class="navbar">
@@ -40,7 +40,13 @@
             </nav>
         </div>
         <div class="logo-center">
-            <img src="ebtools-logo-bordenegro.png" alt="Logo">
+            <a href="https://ebtools.mercadoshops.com.ar" class="logo-link">
+                <img src="ebtools-logo-bordenegro.png" alt="Logo EBTOOLS" class="logo-animado">
+                <span class="stars">⭐</span>
+                <span class="stars stars2">⭐</span>
+            </a>
+
+
         </div>
         <div class="spacer-right"></div>
     </header>
@@ -54,38 +60,47 @@
 
     </footer>
     <script>
-    let originalTitle = document.title;
-    let timer;
+        let originalTitle = document.title;
+        let timer;
 
-    function cambiarTituloInactivo() {
-        document.title = "¡Volvé a EBTOOLS! ";
-    }
+        function cambiarTituloInactivo() {
+            document.title = "¡Volvé a EBTOOLS! ";
+        }
 
-    function restaurarTitulo() {
-        document.title = originalTitle;
-    }
+        function restaurarTitulo() {
+            document.title = originalTitle;
+        }
 
-    // Detecta si el usuario cambia de pestaña
-    document.addEventListener("visibilitychange", () => {
-        if (document.hidden) {
-            timer = setTimeout(cambiarTituloInactivo, 3000); // espera 3 segundos
-        } else {
-            clearTimeout(timer);
+        // Detecta si el usuario cambia de pestaña
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
+                timer = setTimeout(cambiarTituloInactivo, 3000); // espera 3 segundos
+            } else {
+                clearTimeout(timer);
+                restaurarTitulo();
+            }
+        });
+
+        // Detecta si no hay interacción del usuario
+        let inactividad;
+        function reiniciarTimerInactividad() {
+            clearTimeout(inactividad);
+            inactividad = setTimeout(cambiarTituloInactivo, 10000); // 10 segundos sin moverse
             restaurarTitulo();
         }
-    });
 
-    // Detecta si no hay interacción del usuario
-    let inactividad;
-    function reiniciarTimerInactividad() {
-        clearTimeout(inactividad);
-        inactividad = setTimeout(cambiarTituloInactivo, 10000); // 10 segundos sin moverse
-        restaurarTitulo();
-    }
+        ["mousemove", "keydown", "scroll", "click"].forEach(evt => {
+            document.addEventListener(evt, reiniciarTimerInactividad);
+        });
+    </script>
+    <script>
+  const emojis = ["✨", "🎉", "💥", "🔧", "⭐", "🛠️"];
+  const stars = document.querySelectorAll(".stars");
 
-    ["mousemove", "keydown", "scroll", "click"].forEach(evt => {
-        document.addEventListener(evt, reiniciarTimerInactividad);
-    });
+  stars.forEach(star => {
+    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+    star.textContent = randomEmoji;
+  });
 </script>
 </body>
 <!-- 
@@ -123,4 +138,5 @@
 |         https://github.com/theotrosman       |
 '=============================================='
 -->
+
 </html>

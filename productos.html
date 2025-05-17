@@ -19,9 +19,11 @@
             </ul>
         </nav>
     </div>
-    <div class="logo-center">
-        <img src="ebtools-logo-bordenegro.png" alt="Logo">
-    </div>
+    <a href="https://ebtools.mercadoshops.com.ar" class="logo-link">
+                <img src="ebtools-logo-bordenegro.png" alt="Logo EBTOOLS" class="logo-animado">
+                <span class="stars">⭐</span>
+                <span class="stars stars2">⭐</span>
+            </a>
     <div class="spacer-right"></div>
 </header>
 <main>
@@ -1116,6 +1118,49 @@ melidata("send", "view", {
     ["mousemove", "keydown", "scroll", "click"].forEach(evt => {
         document.addEventListener(evt, reiniciarTimerInactividad);
     });
+</script>
+<script>
+        let originalTitle = document.title;
+        let timer;
+
+        function cambiarTituloInactivo() {
+            document.title = "¡Volvé a EBTOOLS! ";
+        }
+
+        function restaurarTitulo() {
+            document.title = originalTitle;
+        }
+
+        // Detecta si el usuario cambia de pestaña
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
+                timer = setTimeout(cambiarTituloInactivo, 3000); // espera 3 segundos
+            } else {
+                clearTimeout(timer);
+                restaurarTitulo();
+            }
+        });
+
+        // Detecta si no hay interacción del usuario
+        let inactividad;
+        function reiniciarTimerInactividad() {
+            clearTimeout(inactividad);
+            inactividad = setTimeout(cambiarTituloInactivo, 10000); // 10 segundos sin moverse
+            restaurarTitulo();
+        }
+
+        ["mousemove", "keydown", "scroll", "click"].forEach(evt => {
+            document.addEventListener(evt, reiniciarTimerInactividad);
+        });
+    </script>
+    <script>
+  const emojis = ["✨", "🎉", "💥", "🔧", "⭐", "🛠️"];
+  const stars = document.querySelectorAll(".stars");
+
+  stars.forEach(star => {
+    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+    star.textContent = randomEmoji;
+  });
 </script>
 </body>
 </html>
