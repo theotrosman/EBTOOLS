@@ -81,21 +81,19 @@
         document.title = originalTitle;
     }
 
-    // Detecta si el usuario cambia de pestaña
     document.addEventListener("visibilitychange", () => {
         if (document.hidden) {
-            timer = setTimeout(cambiarTituloInactivo, 3000); // espera 3 segundos
+            timer = setTimeout(cambiarTituloInactivo, 3000); 
         } else {
             clearTimeout(timer);
             restaurarTitulo();
         }
     });
 
-    // Detecta si no hay interacción del usuario
     let inactividad;
     function reiniciarTimerInactividad() {
         clearTimeout(inactividad);
-        inactividad = setTimeout(cambiarTituloInactivo, 10000); // 10 segundos sin moverse
+        inactividad = setTimeout(cambiarTituloInactivo, 10000); 
         restaurarTitulo();
     }
 
@@ -115,21 +113,19 @@
             document.title = originalTitle;
         }
 
-        // Detecta si el usuario cambia de pestaña
         document.addEventListener("visibilitychange", () => {
             if (document.hidden) {
-                timer = setTimeout(cambiarTituloInactivo, 3000); // espera 3 segundos
+                timer = setTimeout(cambiarTituloInactivo, 3000); 
             } else {
                 clearTimeout(timer);
                 restaurarTitulo();
             }
         });
 
-        // Detecta si no hay interacción del usuario
         let inactividad;
         function reiniciarTimerInactividad() {
             clearTimeout(inactividad);
-            inactividad = setTimeout(cambiarTituloInactivo, 10000); // 10 segundos sin moverse
+            inactividad = setTimeout(cambiarTituloInactivo, 10000); 
             restaurarTitulo();
         }
 
@@ -179,7 +175,7 @@
   window.addEventListener("load", () => {
     const loader = document.getElementById("loader");
     loader.style.opacity = 0;
-    setTimeout(() => loader.style.display = "none", 600); // coincide con el fade-out
+    setTimeout(() => loader.style.display = "none", 600); 
   });
 </script>
 
