@@ -2,38 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Inicio ➤ EBTOOLS</title>
-    <link rel="icon" type="image/png" href="ebtools-logo.png">
-    <link rel="stylesheet" href="stylesindex.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Inicio ➤ EBTOOLS</title>
+  <link rel="icon" type="image/png" href="ebtools-logo.png">
+  <link rel="stylesheet" href="stylesindex.css">
 </head>
 
 <body class="bodyindex">
   <div id="loader">
-  <img src="ebtools-logo-bordenegro.png" alt="Cargando EBTOOLS..." />
-</div>
-    <video autoplay muted loop playsinline id="myVideo">
-        <source id="videoSource" type="video/mp4">
-    </video>
-
-    <script>
-        const videos = [
-            "video1.mp4",
-            "video2.mp4",
-            "video3.mp4",
-            "video4.mp4"
-        ];
-
-        const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-
-        const videoSource = document.getElementById("videoSource");
-        videoSource.src = randomVideo;
-        document.getElementById("myVideo").load();
-    </script>
-    <header>
-        <div class="nav-left">
-            <nav class="navbar">
+    <img src="ebtools-logo-bordenegro.png" alt="Cargando EBTOOLS..." />
+  </div>
+  <video id="myVideo" autoplay muted loop playsinline>
+    <source id="videoSource" src="" type="video/mp4">
+  </video>
+  <header>
+    <div class="nav-left">
+      <nav class="navbar">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="productos.html">Productos</a></li>
@@ -41,106 +26,123 @@
           <li><a href="quienessomos.html">Ubicación</a></li>
         </ul>
       </nav>
-        </div>
-        <div class="logo-center">
-            <a href="https://ebtools.mercadoshops.com.ar" class="logo-link">
-                <img src="ebtools-logo-bordenegro.png" alt="Logo EBTOOLS" class="logo-animado">
-                <span class="stars">⭐</span>
-                <span class="stars stars2">⭐</span>
-            </a>
+    </div>
+    <div class="logo-center">
+      <a href="https://ebtools.mercadoshops.com.ar" class="logo-link">
+        <img src="ebtools-logo-bordenegro.png" alt="Logo EBTOOLS" class="logo-animado">
+        <span class="stars">⭐</span>
+        <span class="stars stars2">⭐</span>
+      </a>
 
 
-        </div>
-        <div class="spacer-right"></div>
-    </header>
+    </div>
+    <div class="spacer-right"></div>
+  </header>
 
 
 
-    <main>
+  <main>
 
-    </main>
-    <footer>
+  </main>
+  <footer>
 
-    </footer>
-    <script>
-        let originalTitle = document.title;
-        let timer;
+  </footer>
+  <script>
+    let originalTitle = document.title;
+    let timer;
 
-        function cambiarTituloInactivo() {
-            document.title = "¡Volvé a EBTOOLS! ";
-        }
+    function cambiarTituloInactivo() {
+      document.title = "¡Volvé a EBTOOLS! ";
+    }
 
-        function restaurarTitulo() {
-            document.title = originalTitle;
-        }
+    function restaurarTitulo() {
+      document.title = originalTitle;
+    }
 
-        document.addEventListener("visibilitychange", () => {
-            if (document.hidden) {
-                timer = setTimeout(cambiarTituloInactivo, 3000); 
-            } else {
-                clearTimeout(timer);
-                restaurarTitulo();
-            }
-        });
-
-        let inactividad;
-        function reiniciarTimerInactividad() {
-            clearTimeout(inactividad);
-            inactividad = setTimeout(cambiarTituloInactivo, 10000); 
-            restaurarTitulo();
-        }
-
-        ["mousemove", "keydown", "scroll", "click"].forEach(evt => {
-            document.addEventListener(evt, reiniciarTimerInactividad);
-        });
-    </script>
-    <script>
-  const emojis = ["✨", "🎉", "💥", "🔧", "⭐", "🛠️"];
-  const stars = document.querySelectorAll(".stars");
-
-  stars.forEach(star => {
-    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-    star.textContent = randomEmoji;
-  });
-</script>
-<a href="https://wa.me/5491171349389?text=¡Hola!%20Quiero%20más%20info." class="whatsapp-float" target="_blank">
-  <img src="whatsapplogo.png" alt="WhatsApp">
-</a>
-<a href="tel:+5491154143660" class="telefono-float" title="Llamanos" aria-label="Llamanos">
-  📞
-</a>
-
-<div id="popup-guia" class="popup-guia">
-  <div class="popup-contenido">
-    <p>👋 ¡Bienvenido a EBTOOLS!</p>
-    <p>Acá podés ver nuestros <strong>productos</strong>, consultar por <strong>WhatsApp</strong> o ver nuestra <strong>ubicación</strong>.</p>
-    <button id="cerrar-popup">Entendido</button>
-  </div>
-</div>
-<script>
-  document.getElementById("cerrar-popup").addEventListener("click", function () {
-    document.getElementById("popup-guia").style.display = "none";
-  });
-</script>
-<script>
-  const elementos = document.querySelectorAll('.scroll-animado');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) {
+        timer = setTimeout(cambiarTituloInactivo, 3000);
+      } else {
+        clearTimeout(timer);
+        restaurarTitulo();
       }
     });
-  });
 
-  elementos.forEach(el => observer.observe(el));
-</script>
+    let inactividad;
+    function reiniciarTimerInactividad() {
+      clearTimeout(inactividad);
+      inactividad = setTimeout(cambiarTituloInactivo, 10000);
+      restaurarTitulo();
+    }
+
+    ["mousemove", "keydown", "scroll", "click"].forEach(evt => {
+      document.addEventListener(evt, reiniciarTimerInactividad);
+    });
+  </script>
+  <script>
+    const emojis = ["✨", "🎉", "💥", "🔧", "⭐", "🛠️"];
+    const stars = document.querySelectorAll(".stars");
+
+    stars.forEach(star => {
+      const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+      star.textContent = randomEmoji;
+    });
+  </script>
+  <a href="https://wa.me/5491171349389?text=¡Hola!%20Quiero%20más%20info." class="whatsapp-float" target="_blank">
+    <img src="whatsapplogo.png" alt="WhatsApp">
+  </a>
+  <a href="tel:+5491154143660" class="telefono-float" title="Llamanos" aria-label="Llamanos">
+    📞
+  </a>
+
+  <div id="popup-guia" class="popup-guia">
+    <div class="popup-contenido">
+      <p>👋 ¡Bienvenido a EBTOOLS!</p>
+      <p>Acá podés ver nuestros <strong>productos</strong>, consultar por <strong>WhatsApp</strong> o ver nuestra
+        <strong>ubicación</strong>.</p>
+      <button id="cerrar-popup">Entendido</button>
+    </div>
+  </div>
+  <script>
+    document.getElementById("cerrar-popup").addEventListener("click", function () {
+      document.getElementById("popup-guia").style.display = "none";
+    });
+  </script>
+  <script>
+    const elementos = document.querySelectorAll('.scroll-animado');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    elementos.forEach(el => observer.observe(el));
+  </script>
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      loader.style.opacity = 0;
+      setTimeout(() => loader.style.display = "none", 600);
+    });
+  </script>
 <script>
-  window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
-    loader.style.opacity = 0;
-    setTimeout(() => loader.style.display = "none", 600); 
-  });
+  window.onload = () => {
+    const videos = [
+      "video1.mp4",
+      "video2.mp4",
+      "video3.mp4",
+      "video4.mp4"
+    ];
+
+    const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+
+    const videoSource = document.getElementById("videoSource");
+    videoSource.src = randomVideo;
+    document.getElementById("myVideo").load();
+  };
 </script>
 
 </body>
