@@ -1,4 +1,4 @@
-# 🌾 EBTOOLS — [Página Web Oficial](https:/ebtools.netlify.app/) 
+# 🌾 EBTOOLS — [Página Web Oficial](https://ebtools.netlify.app/) 
 
 Este proyecto es una **plataforma web desarrollada en HTML y CSS puro**, pensada como sitio oficial para el negocio de herramientas de mi papá, **EBTOOLS**, especializado en equipamiento para trabajos de agricultura y campo.
 
