@@ -45,7 +45,7 @@ El footer incluye accesos rápidos a medios de contacto:
 - 📧 Mail: `ml.elbahiense@gmail.com`  
 - 📱 WhatsApp: [+54 9 11 7134 9389](https://wa.me/5491171349389?text=Hola%21)  
 - 📸 Instagram: [@ebtools](https://instagram.com/ebtools)  
-- 🛒 Tienda oficial: [ebtools.mercadoshops.com.ar](https://ebtools.mercadoshops.com.ar)
+- 🛒 Tienda antigua: [ebtools.mercadoshops.com.ar](https://ebtools.mercadoshops.com.ar)
 
 ---
 
