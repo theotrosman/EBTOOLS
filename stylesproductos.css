@@ -555,3 +555,37 @@ h1, h2, h3, a {
     box-sizing: border-box;
   }
 }
+.buscador-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#buscador {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+#buscador:focus {
+  outline: none;
+  border-color: coral;
+  box-shadow: 0 0 8px rgb(252, 108, 55);
+}
+@media (max-width: 768px) {
+  .buscador-container {
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #buscador {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    border-radius: 12px;
+  }
+}

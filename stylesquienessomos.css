@@ -484,3 +484,13 @@ h1, h2, h3, a {
     opacity: 1;
   }
 }
+#buscador {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}

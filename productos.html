@@ -33,6 +33,9 @@
   </header>
  <main class="catalogo-ebtools">
   <h2>Nuestros Productos</h2>
+<div class="buscador-container">
+  <input type="text" id="buscador" placeholder="🔍 Buscar productos..." onkeyup="filtrarProductos()" />
+</div>
   <div class="productos-grid">
 
     <div class="producto">
@@ -334,6 +337,21 @@
     loader.style.opacity = 0;
     setTimeout(() => loader.style.display = "none", 600); 
   });
+</script>
+<script>
+  function filtrarProductos() {
+    const input = document.getElementById("buscador").value.toLowerCase();
+    const productos = document.querySelectorAll(".producto");
+
+    productos.forEach(producto => {
+      const texto = producto.innerText.toLowerCase();
+      if (texto.includes(input)) {
+        producto.style.display = "flex";
+      } else {
+        producto.style.display = "none";
+      }
+    });
+  }
 </script>
 
 </body>
