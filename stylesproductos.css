@@ -599,3 +599,54 @@ h1, h2, h3, a {
 .producto:hover {
   transform: scale(1.02);
 }
+.contadores-ebtools {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px 15px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.contador-box {
+  background-color: #ffe4e1;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  min-width: 180px;
+}
+
+.contador-box h3 {
+  color: coral;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#contador-ventas,
+#contador-clientes {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: coral;
+}
+
+@media (max-width: 600px) {
+  .contadores-ebtools {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contador-box {
+    width: 90%;
+    padding: 18px;
+  }
+
+  .contador-box h3 {
+    font-size: 0.95rem;
+  }
+
+  #contador-ventas,
+  #contador-clientes {
+    font-size: 1.5rem;
+  }
+}

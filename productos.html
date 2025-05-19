@@ -24,6 +24,7 @@
         </ul>
       </nav>
     </div>
+    
     <a href="index.html" class="logo-link">
       <img src="ebtools-logo-bordenegro.png" alt="Logo EBTOOLS" class="logo-animado">
       <span class="stars">⭐</span>
@@ -36,6 +37,16 @@
     <div class="buscador-container">
       <input type="text" id="buscador" placeholder="🔍 Buscar productos..." onkeyup="filtrarProductos()" />
     </div>
+    <section class="contadores-ebtools">
+  <div class="contador-box">
+    <h3>🛠️ Productos vendidos</h3>
+    <div id="contador-ventas">0</div>
+  </div>
+  <div class="contador-box">
+    <h3>😊 Clientes satisfechos</h3>
+    <div id="contador-clientes">0</div>
+  </div>
+</section>
     <div class="productos-grid">
 
       <div class="producto">
@@ -510,6 +521,34 @@
       });
     }
   </script>
+<script>
+function animarContador(id, inicio, final, duracion) {
+  let obj = document.getElementById(id);
+  let rango = final - inicio;
+  let incremento = 1;
+  let stepTime = Math.floor(duracion / rango);
+  let current = inicio;
+  let timer = setInterval(() => {
+    current += incremento;
+    obj.textContent = current.toLocaleString("es-AR") + "+";
+    if (current >= final) clearInterval(timer);
+  }, stepTime);
+}
+
+window.addEventListener("load", () => {
+  animarContador("contador-ventas", 9700, 10000, 1500);
+  animarContador("contador-clientes", 4700, 5000, 1500);
+
+  setInterval(() => {
+    let ventas = document.getElementById("contador-ventas");
+    let clientes = document.getElementById("contador-clientes");
+    let v = parseInt(ventas.textContent.replace(/\D/g, '')) + 1;
+    let c = parseInt(clientes.textContent.replace(/\D/g, '')) + (Math.random() < 0.4 ? 1 : 0);
+    ventas.textContent = v.toLocaleString("es-AR") + "+";
+    clientes.textContent = c.toLocaleString("es-AR") + "+";
+  }, 10000);
+});
+</script>
 
 </body>
 <!-- 
