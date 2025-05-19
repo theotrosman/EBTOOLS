@@ -684,3 +684,26 @@ main {
     align-items: center;
   }
 }
+@media (max-width: 768px) {
+  .testimonios-ebtools {
+    padding: 10px;
+  }
+
+  .testimonios-grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .testimonio {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .testimonio .texto {
+    font-size: 0.95rem;
+  }
+
+  .testimonios-ebtools h2 {
+    font-size: 1.4rem;
+  }
+}
