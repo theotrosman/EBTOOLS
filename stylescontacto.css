@@ -583,3 +583,47 @@ main {
     min-height: 70vh;
   }
 }
+.tarjeta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px); 
+  margin: 40px auto;
+}
+
+.tarjeta-flip {
+  width: 450px;
+  height: 280px;
+  perspective: 1000px;
+}
+
+.tarjeta-front, .tarjeta-back {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.8s ease;
+}
+
+.tarjeta-front img, .tarjeta-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-flip {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.tarjeta-container:hover .tarjeta-flip {
+  transform: rotateY(180deg);
+}
+
+.tarjeta-back {
+  transform: rotateY(180deg);
+}
