@@ -26,7 +26,6 @@ header {
     border-bottom: 1.3px solid black;
 }
 
-/* NAVBAR A LA IZQUIERDA */
 .nav-left {
     flex: 1;
 }
@@ -57,7 +56,6 @@ header {
         0px -2px 0px black;
 }
 
-/* LOGO CENTRADO */
 .logo-center {
     flex: 1;
     display: flex;
@@ -71,12 +69,10 @@ header {
     margin: 0 auto;
 }
 
-/* ESPACIADOR A LA DERECHA PARA SIMETRÍA */
 .spacer-right {
     flex: 1.15;
 }
 
-/* FOOTER */
 footer {
     background-color: #f3f2f2;
     padding: 20px;
@@ -228,7 +224,7 @@ footer h1 {
   }
 
   main {
-    padding-bottom: 80px; /* espacio para el footer fijo */
+    padding-bottom: 80px; 
   }
 
   footer {
@@ -415,7 +411,7 @@ h1, h2, h3, a {
 }
 .telefono-float {
   position: fixed;
-  bottom: 90px; /* justo encima del botón de WhatsApp */
+  bottom: 90px; 
   right: 20px;
   z-index: 1000;
   width: 60px;

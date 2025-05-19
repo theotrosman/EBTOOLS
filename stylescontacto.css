@@ -26,7 +26,6 @@ header {
     border-bottom: 1.3px solid black;
 }
 
-/* NAVBAR A LA IZQUIERDA */
 .nav-left {
     flex: 1;
 }
@@ -57,7 +56,6 @@ header {
         0px -2px 0px black;
 }
 
-/* LOGO CENTRADO */
 .logo-center {
     flex: 1;
     display: flex;
@@ -70,12 +68,10 @@ header {
     margin: 0 auto;
 }
 
-/* ESPACIADOR A LA DERECHA PARA SIMETRÍA */
 .spacer-right {
     flex: 1.15;
 }
 
-/* FOOTER */
 footer {
     background-color: #f3f2f2;
     padding: 20px;
@@ -247,7 +243,7 @@ main {
   }
 
   main {
-    padding-bottom: 80px; /* espacio para el footer fijo */
+    padding-bottom: 80px; 
   }
 
   footer {
@@ -399,7 +395,7 @@ button, .btn {
 }
 .telefono-float {
   position: fixed;
-  bottom: 90px; /* justo encima del botón de WhatsApp */
+  bottom: 90px; 
   right: 20px;
   z-index: 1000;
   width: 60px;
@@ -466,5 +462,124 @@ button, .btn {
   50% {
     transform: scale(1.1);
     opacity: 1;
+  }
+}
+.tarjeta-container {
+  perspective: 1000px;
+  width: 40%;
+  margin: 7.5% auto;
+}
+
+.tarjeta-flip {
+  width: 100%;
+  height: auto;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.tarjeta-container:hover .tarjeta-flip {
+  transform: rotateY(180deg);
+}
+
+.tarjeta-front,
+.tarjeta-back {
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  border: 1.5px solid black;
+}
+
+.tarjeta-front img,
+.tarjeta-back img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.tarjeta-back {
+  transform: rotateY(180deg);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  min-height: 80vh;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.tarjeta-container {
+  width: 90%;
+  max-width: 450px;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px 0;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tarjeta-container {
+  perspective: 1000px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-bottom: 20%;
+}
+
+.tarjeta-flip {
+  width: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1.5s ease;
+}
+
+.tarjeta-container:hover .tarjeta-flip {
+  transform: rotateY(180deg);
+}
+
+.tarjeta-front,
+.tarjeta-back {
+  width: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  border: 1.5px solid black;
+}
+
+.tarjeta-front img,
+.tarjeta-back img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.tarjeta-back {
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 768px) {
+  .tarjeta-container {
+    max-width: 90%;
+  }
+
+  main {
+    padding: 20px;
+    min-height: 70vh;
   }
 }

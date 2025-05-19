@@ -31,7 +31,6 @@
     z-index: -1;
 }
 
-/* HEADER ESTILO FLEX CON 3 COLUMNAS */
 header {
     display: flex;
     align-items: center;
@@ -41,7 +40,6 @@ header {
     z-index: 1;
 }
 
-/* NAVBAR A LA IZQUIERDA */
 .nav-left {
     flex: 1;
 }
@@ -72,7 +70,6 @@ header {
         0px -2px 0px black;
 }
 
-/* LOGO CENTRADO */
 .logo-center {
     flex: 1;
     display: flex;
@@ -86,7 +83,6 @@ header {
     margin: 0 auto;
 }
 
-/* ESPACIADOR A LA DERECHA PARA SIMETRÍA */
 .spacer-right {
     flex: 1.15;
 }
@@ -300,7 +296,7 @@ h1, h2, h3, a {
 }
 .telefono-float {
   position: fixed;
-  bottom: 90px; /* justo encima del botón de WhatsApp */
+  bottom: 90px; 
   right: 20px;
   z-index: 1000;
   width: 60px;
