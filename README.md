@@ -4,7 +4,7 @@ Este proyecto es una **plataforma web desarrollada en HTML y CSS puro**, pensada
 
 ---
 
-## 🧠 ¿Qué hace esta página?
+## 🧠 ¿Qué hace esta página? 
 
 La página permite a los usuarios navegar por distintas secciones clave:
 
