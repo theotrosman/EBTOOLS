@@ -1,96 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 .bodyindex {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content {
-    position: relative;
-    flex: 1;
-    overflow: hidden;
+  position: relative;
+  flex: 1;
+  overflow: hidden;
 }
 
 #myVideo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 40px;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-left {
-    flex: 1;
+  flex: 1;
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .navbar li a {
-    text-decoration: none;
-    color: #fffdfd;
-    font-weight: bold;
-    font-size: 1.3rem;
-    transition: color 0.3s ease;
-    text-shadow: 2px 0px 0px black,
-        0px 2px 0px black,
-        -2px 0px 0px black,
-        0px -2px 0px black;
+  text-decoration: none;
+  color: #fffdfd;
+  font-weight: bold;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+  text-shadow: 2px 0px 0px black,
+    0px 2px 0px black,
+    -2px 0px 0px black,
+    0px -2px 0px black;
 }
 
 .navbar li a:hover {
-    color: rgb(252, 199, 86);
-    text-shadow: 2px 0px 0px rgb(0, 0, 0),
-        0px 2px 0px black,
-        -2px 0px 0px rgb(0, 0, 0),
-        0px -2px 0px black;
+  color: rgb(252, 199, 86);
+  text-shadow: 2px 0px 0px rgb(0, 0, 0),
+    0px 2px 0px black,
+    -2px 0px 0px rgb(0, 0, 0),
+    0px -2px 0px black;
 }
 
 .logo-center {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .logo-center img {
-    width: 10rem;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  width: 10rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .spacer-right {
-    flex: 1.15;
+  flex: 1.15;
 }
 
 .logo-link {
   position: relative;
   display: inline-block;
   transition: transform 0.3s ease-in-out;
+  margin-left: 7%;
 }
 
 .logo-link:hover {
@@ -128,13 +129,17 @@ header {
 }
 
 @keyframes sparkle {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1.3) rotate(0deg);
   }
+
   50% {
     transform: scale(1.6) rotate(25deg);
   }
 }
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -189,33 +194,42 @@ header {
     margin: 0;
   }
 }
+
 .navbar li a,
 .navbarfooter li a,
 button {
-    transition: color 0.6s ease, text-shadow 0.6s ease;
+  transition: color 0.6s ease, text-shadow 0.6s ease;
 
 }
+
 .logo-center img:hover {
   transform: scale(1.05) rotate(1deg);
   transition: transform 0.3s ease;
-} 
+}
+
 html {
   scroll-behavior: smooth;
 }
-h1, h2, h3, a {
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+
+h1,
+h2,
+h3,
+a {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
+
 .redes-container img:hover {
   transform: scale(1.1) rotate(5deg);
   filter: brightness(1.2);
 }
+
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   background-color: #25D366;
   display: flex;
@@ -224,6 +238,7 @@ h1, h2, h3, a {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   padding: 8px;
   transition: transform 0.3s ease;
+  overflow: visible;
 }
 
 .whatsapp-float img {
@@ -235,6 +250,31 @@ h1, h2, h3, a {
   transform: scale(1.1);
 }
 
+.whatsapp-float::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+  border-top: 6px solid white;
+  animation: rotateBorder 1.5s linear infinite;
+  box-sizing: border-box;
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 @media (max-width: 768px) {
   .whatsapp-float {
     width: 50px;
@@ -244,6 +284,7 @@ h1, h2, h3, a {
     padding: 6px;
   }
 }
+
 .popup-guia {
   position: fixed;
   top: 0;
@@ -264,7 +305,7 @@ h1, h2, h3, a {
   text-align: center;
   width: 85%;
   max-width: 320px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   font-size: 1.1rem;
 }
 
@@ -281,9 +322,10 @@ h1, h2, h3, a {
 
 @media (min-width: 769px) {
   .popup-guia {
-    display: none; 
+    display: none;
   }
 }
+
 .scroll-animado {
   opacity: 0;
   transform: translateY(40px);
@@ -294,9 +336,10 @@ h1, h2, h3, a {
   opacity: 1;
   transform: translateY(0);
 }
+
 .telefono-float {
   position: fixed;
-  bottom: 90px; 
+  bottom: 90px;
   right: 20px;
   z-index: 1000;
   width: 60px;
@@ -327,6 +370,7 @@ h1, h2, h3, a {
     right: 15px;
   }
 }
+
 .telefono-float {
   display: none;
 }
@@ -336,6 +380,7 @@ h1, h2, h3, a {
     display: flex;
   }
 }
+
 #loader {
   position: fixed;
   top: 0;
@@ -356,12 +401,49 @@ h1, h2, h3, a {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.8;
   }
+
   50% {
     transform: scale(1.1);
     opacity: 1;
+  }
+}
+
+.hero-frase {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  padding: 0 20px;
+  max-width: 90%;
+  animation: fadeIn 10s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-frase {
+    font-size: 1.6rem;
   }
 }

@@ -29,10 +29,10 @@
     </div>
     <div class="logo-center">
       <a href="index.html" class="logo-link">
-            <img src="ebtools-logo-bordenegro.png" alt="Logo EBTOOLS" class="logo-animado">
-            <span class="stars">⭐</span>
-            <span class="stars stars2">⭐</span>
-        </a>
+        <img src="ebtools-logo-bordenegro.png" alt="Logo EBTOOLS" class="logo-animado">
+        <span class="stars">⭐</span>
+        <span class="stars stars2">⭐</span>
+      </a>
 
 
     </div>
@@ -99,7 +99,8 @@
     <div class="popup-contenido">
       <p>👋 ¡Bienvenido a EBTOOLS!</p>
       <p>Acá podés ver nuestros <strong>productos</strong>, consultar por <strong>WhatsApp</strong> o ver nuestra
-        <strong>ubicación</strong>.</p>
+        <strong>ubicación</strong>.
+      </p>
       <button id="cerrar-popup">Entendido</button>
     </div>
   </div>
@@ -128,22 +129,51 @@
       setTimeout(() => loader.style.display = "none", 600);
     });
   </script>
-<script>
-  window.onload = () => {
-    const videos = [
-      "video1.mp4",
-      "video2.mp4",
-      "video3.mp4",
-      "video4.mp4"
+  <script>
+    window.onload = () => {
+      const videos = [
+        "video1.mp4",
+        "video2.mp4",
+        "video3.mp4",
+        "video4.mp4"
+      ];
+
+      const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+
+      const videoSource = document.getElementById("videoSource");
+      videoSource.src = randomVideo;
+      document.getElementById("myVideo").load();
+    };
+  </script>
+  <div class="hero-frase scroll-animado" id="frase-slogan"></div>
+
+  <script>
+    const frases = [
+      "El campo se mueve con EBTOOLS.",
+      "Donde hay trabajo, hay una herramienta nuestra.",
+      "Desde el injerto hasta el embutido, somos líderes.",
+      "Elegidos por miles. Elegidos por el campo.",
+      "Herramientas que transforman trabajo en orgullo.",
+      "Más de 10000 productos vendidos. Y vamos por más.",
+      "Confianza argentina, calidad internacional.",
+      "No vendemos herramientas, vendemos soluciones.",
+      "Para los que laburan de verdad. EBTOOLS.",
+      "Somos líderes porque vos también lo sos.",
+      "Hacé más con menos. Nosotros te damos la herramienta.",
+      "Multiplicá tu trabajo. Reducí el esfuerzo.",
+      "Acelerá cada tarea. Disminuí tus costos.",
+      "El secreto del productor moderno empieza en EBTOOLS.",
+      "Menos tiempo. Menos esfuerzo. Más producción.",
+      "Cada segundo cuenta. Cada herramienta también.",
+      "Optimizá tu campo. Invertí en herramientas que rinden.",
+      "Para quienes no quieren perder tiempo: EBTOOLS.",
+      "De la siembra al chacinado: tenemos lo que necesitás.",
+      "Invertí una vez, producí para siempre. EBTOOLS."
     ];
+    const random = frases[Math.floor(Math.random() * frases.length)];
+    document.getElementById("frase-slogan").textContent = random;
+  </script>
 
-    const randomVideo = videos[Math.floor(Math.random() * videos.length)];
-
-    const videoSource = document.getElementById("videoSource");
-    videoSource.src = randomVideo;
-    document.getElementById("myVideo").load();
-  };
-</script>
 
 </body>
 <!-- 

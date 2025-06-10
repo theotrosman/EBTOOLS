@@ -11,8 +11,8 @@
 
 <body class="bodyqs">
     <div id="loader">
-  <img src="ebtools-logo-bordenegro.png" alt="Cargando EBTOOLS..." />
-</div>
+        <img src="ebtools-logo-bordenegro.png" alt="Cargando EBTOOLS..." />
+    </div>
     <header>
         <div class="nav-left">
             <nav class="navbar">
@@ -60,7 +60,7 @@
                 <span class="emojis ig-emoji"></span>
             </a>
             <a href="https://wa.me/5491171349389?text=Hola%21%20vengo%20desde%20la%20p%C3%A1gina%20de%20Ebtools%20y%20quiero%20mas%20info"
- target="_blank" class="red-icon">
+                target="_blank" class="red-icon">
                 <img src="whatsapplogo.png" alt="WhatsApp" class="whatsapplogo">
                 <span class="emojis wa-emoji"></span>
             </a>
@@ -88,7 +88,7 @@
 
         document.addEventListener("visibilitychange", () => {
             if (document.hidden) {
-                timer = setTimeout(cambiarTituloInactivo, 3000); 
+                timer = setTimeout(cambiarTituloInactivo, 3000);
             } else {
                 clearTimeout(timer);
                 restaurarTitulo();
@@ -98,7 +98,7 @@
         let inactividad;
         function reiniciarTimerInactividad() {
             clearTimeout(inactividad);
-            inactividad = setTimeout(cambiarTituloInactivo, 10000); 
+            inactividad = setTimeout(cambiarTituloInactivo, 10000);
             restaurarTitulo();
         }
 
@@ -120,7 +120,7 @@
 
         document.addEventListener("visibilitychange", () => {
             if (document.hidden) {
-                timer = setTimeout(cambiarTituloInactivo, 3000); 
+                timer = setTimeout(cambiarTituloInactivo, 3000);
             } else {
                 clearTimeout(timer);
                 restaurarTitulo();
@@ -130,7 +130,7 @@
         let inactividad;
         function reiniciarTimerInactividad() {
             clearTimeout(inactividad);
-            inactividad = setTimeout(cambiarTituloInactivo, 10000); 
+            inactividad = setTimeout(cambiarTituloInactivo, 10000);
             restaurarTitulo();
         }
 
@@ -160,8 +160,8 @@
         <img src="whatsapplogo.png" alt="WhatsApp">
     </a>
     <a href="tel:+5491154143660" class="telefono-float" title="Llamanos" aria-label="Llamanos">
-  📞
-</a>
+        📞
+    </a>
     <div id="popup-maps" class="popup-guia">
         <div class="popup-contenido">
             <p>📍 ¿Querés abrir nuestra ubicación en Google Maps?</p>
@@ -186,26 +186,26 @@
             document.getElementById(id).style.display = "none";
         }
     </script>
-<script>
-  const elementos = document.querySelectorAll('.scroll-animado');
+    <script>
+        const elementos = document.querySelectorAll('.scroll-animado');
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  });
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        });
 
-  elementos.forEach(el => observer.observe(el));
-</script>
-<script>
-  window.addEventListener("load", () => {
-    const loader = document.getElementById("loader");
-    loader.style.opacity = 0;
-    setTimeout(() => loader.style.display = "none", 600); 
-  });
-</script>
+        elementos.forEach(el => observer.observe(el));
+    </script>
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.getElementById("loader");
+            loader.style.opacity = 0;
+            setTimeout(() => loader.style.display = "none", 600);
+        });
+    </script>
 
 </body>
 <!-- 
