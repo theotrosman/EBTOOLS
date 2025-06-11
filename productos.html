@@ -33,20 +33,13 @@
     <div class="spacer-right"></div>
   </header>
   <main class="catalogo-ebtools">
-    <h2>Nuestros Productos</h2>
+    <h2>-> Nuestros Productos <-</h2>
     <div class="buscador-container">
-      <input type="text" id="buscador" placeholder="🔍 Buscar productos..." onkeyup="filtrarProductos()" />
-    </div>
-    <section class="contadores-ebtools">
-      <div class="contador-box">
-        <h3>🛠️ Productos vendidos</h3>
-        <div id="contador-ventas">0</div>
-      </div>
-      <div class="contador-box">
-        <h3>😊 Clientes satisfechos</h3>
-        <div id="contador-clientes">0</div>
-      </div>
-    </section>
+  <input type="text" id="buscador" placeholder="🔍 Buscar productos..." />
+  <div class="sugerencias" id="sugerencias"></div>
+</div>
+
+    
     <div class="productos-grid">
 
       <div class="producto">
@@ -549,6 +542,63 @@
       }, 10000);
     });
   </script>
+<script>
+  const sugerenciasData = [
+  "Cinta", "Abrochadora", "Embutidora", "Clipeadora", "Revocadora",
+  "Llave", "Grasera", "Manguera", "Exprimidor", "Tijera", "Pistola",
+  "Clip", "Tripa", "Injertadora", "Salchichas", "Morcilla",
+  "Chorizo", "Kit", "Clips", "Subeclipsadora", "Manual",
+  "Neumática", "Profesional", "Atadora", "Rollos",
+  "Cercos", "Alambrados", "Gomería", "Acople", "Impacto",
+  "Altura", "Poda", "Navaja", "Cuchillas", "Hojas",
+  "Soplete", "Hvlp", "Gravedad", "Aire", "Titanio"
+];
+
+
+  const input = document.getElementById("buscador");
+  const sugerencias = document.getElementById("sugerencias");
+
+  input.addEventListener("input", () => {
+    const valor = input.value.trim().toLowerCase();
+    sugerencias.innerHTML = "";
+
+    if (valor === "") {
+      sugerencias.classList.remove("visible");
+      return;
+    }
+
+    const coincidencias = sugerenciasData.filter(p =>
+  p.toLowerCase().startsWith(valor)
+);
+
+
+    if (coincidencias.length === 0) {
+      sugerencias.classList.remove("visible");
+      return;
+    }
+
+    coincidencias.slice(0, 3).forEach(texto => {
+  const div = document.createElement("div");
+  div.className = "sugerencia";
+  div.textContent = texto;
+  div.onclick = () => {
+    input.value = texto;
+    sugerencias.classList.remove("visible");
+    input.dispatchEvent(new Event("keyup"));
+  };
+  sugerencias.appendChild(div);
+});
+
+
+    sugerencias.classList.add("visible");
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".buscador-container")) {
+      sugerencias.classList.remove("visible");
+    }
+  });
+</script>
 
 </body>
 <!-- 

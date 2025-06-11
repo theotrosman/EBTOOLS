@@ -427,7 +427,7 @@ a {
   z-index: 10;
   padding: 0 20px;
   max-width: 90%;
-  animation: fadeIn 10s ease;
+  animation: fadeIn 13s ease;
 }
 
 @keyframes fadeIn {
@@ -445,5 +445,17 @@ a {
 @media (max-width: 768px) {
   .hero-frase {
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 768px) {
+  .whatsapp-float {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .whatsapp-float img {
+    width: 50px;
+    height: 50px;
   }
 }
