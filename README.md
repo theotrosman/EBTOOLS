@@ -7,7 +7,7 @@ Este proyecto es una **plataforma web desarrollada en HTML y CSS puro**, pensada
 ## 🧠 ¿Qué hace esta página?    
  
 La página permite a los usuarios navegar por distintas secciones clave:
-
+ 
 - **INICIO**: con un diseño atractivo e innovador, usando un **video de fondo** que le da una estética dinámica y profesional.
 - **UBICACIÓN**: incluye un **iframe de Google Maps** embebido, mostrando directamente la localización del negocio en Paternal, CABA.
 - **PRODUCTOS**: catálogo visual con herramientas seleccionadas, organizadas en tarjetas, pensado para escalar a un sistema dinámico en el futuro.
