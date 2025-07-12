@@ -5,7 +5,7 @@ Este proyecto es una **plataforma web desarrollada en HTML y CSS puro**, pensada
 --- 
  
 ## 🧠 ¿Qué hace esta página?    
- 
+  
 La página permite a los usuarios navegar por distintas secciones clave:
  
 - **INICIO**: con un diseño atractivo e innovador, usando un **video de fondo** que le da una estética dinámica y profesional.
